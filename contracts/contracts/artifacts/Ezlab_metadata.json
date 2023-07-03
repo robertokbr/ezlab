@@ -1,0 +1,108 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "priceFeedAddress",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "MINIMUM_USD",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "partnerWalletAddress",
+						"type": "address"
+					}
+				],
+				"name": "fund",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "withdraw",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"details": "Cassino contract ",
+			"kind": "dev",
+			"methods": {},
+			"title": "Ezlab",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Ezlab.sol": "Ezlab"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"@chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol": {
+			"keccak256": "0x6e6e4b0835904509406b070ee173b5bc8f677c19421b76be38aea3b1b3d30846",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://b3beaa37ee61e4ab615e250fbf01601ae481de843fd0ef55e6b44fd9d5fff8a7",
+				"dweb:/ipfs/QmeZUVwd26LzK4Mfp8Zba5JbQNkZFfTzFu1A6FVMMZDg9c"
+			]
+		},
+		"contracts/Ezlab.sol": {
+			"keccak256": "0xbcf3428d60a8d286a9ccc21d60c5b2c88f18bc3aaafdeeb402e52382d9a6e966",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d25caabe3d7fd2fc89fcf89ffd50604599ab9de5878b1d6814404cf4217b6be6",
+				"dweb:/ipfs/QmafH2qcfUbgmQCNMXUBHP8XhZD6qcqm65a19Lx3kCaJwD"
+			]
+		},
+		"contracts/PriceConverter.sol": {
+			"keccak256": "0xa8c5bd692195b3b8f0db04fc684d8129283f19c1bc44e4603c1dd006e5ba2a90",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://caf8ba57e47c905c96f7daf373f394bff201392ecf8d466060d041929b6d17be",
+				"dweb:/ipfs/QmbgM83kSrPFjN7dFW2B12E7qUUaec1dv2Y2mTJiixJwCf"
+			]
+		}
+	},
+	"version": 1
+}
